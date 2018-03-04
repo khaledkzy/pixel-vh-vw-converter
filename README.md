@@ -1,6 +1,6 @@
 # What makes this tool a bit different?
 
-> is that you don't need to go find your windows or console log the width the height of your browser. 
+> What makes this tool a bit different is that you don't need to go and find your window viewport size cause it uses javascript to get it for you.
 
 
 ### Pixel PX to VH Viewport conversion
