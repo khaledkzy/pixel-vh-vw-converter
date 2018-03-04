@@ -1,0 +1,98 @@
+nav {
+    width: 100%;
+    height: 12.5vh;
+    background-color: #252831;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #fdfdfd;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+nav h1 {
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+#footer {
+    background-color: #444;
+    color: #aaa;
+    font-size: 1.56vh;
+    letter-spacing: 1px;
+    padding: 3.91vh;
+    text-align: center;
+    text-transform: uppercase;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+main {
+    background-color: #ffbc6538;
+    min-height: 78vh;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* This removes the counter buttons on the input field */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pixelToVH,
+.pixelToWH,
+.whToPixel,
+.vhToPixel {
+    width: 160px;
+    height: 35px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    background: rgb(20, 8, 122);
+}
+
+input {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.text {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-top: 12px;
+    color: #0e2175;
+    text-decoration: none;
+    border-bottom: solid 2px rgb(44, 85, 182);
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.result {
+    display: inline-block;
+    margin-top: -7px;
+    color: #0e2175;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+}

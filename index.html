@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Pixel PX to VH VW Viewport conversion</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>
+        <a href="/">Pixel PX to VH VW Viewport conversion</a>
+      </h1>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1 -->
+    <div>
+      <span class="text">Convert From px to vh</span>
+      <br>
+      <input class="pixelToVH" type="number" onkeyup="pixelToVH(this.value);">
+      <br>
+      <span class="result" id="pixelToVH">Result</span>
+    </div>
+    <!-- 2 -->
+    <div>
+      <span class="text">Convert From px to wh</span>
+      <br>
+      <input class="pixelToWH" type="number" onkeyup="pixelToWH(this.value);">
+      <br>
+      <span class="result" id="pixelToWH">Result</span>
+    </div>
+    <!-- 3 -->
+    <div>
+      <span class="text">Convert From vh to px</span>
+      <br>
+      <input class="vhToPixel" type="number" onkeyup="vhToPixel(this.value);">
+      <br>
+      <span class="result" id="vhToPixel">Result</span>
+    </div>
+    <!-- 4 -->
+    <div>
+      <span class="text">Convert From wh to wh</span>
+      <br>
+      <input class="whToPixel" type="number" onkeyup="whToPixel(this.value);">
+      <br>
+      <span class="result" id="whToPixel">Result</span>
+    </div>
+
+  </main>
+
+
+  <footer id="footer">
+    Copyright (c) 2018
+    <a href="/">
+      <strong>Pixel PX to VH VW Viewport conversion</strong>
+    </a> All Rights Reserved. To
+    <a href="/">
+      <strong>khaledkzy</strong>
+    </a>
+  </footer>
+</body>
+
+<script>
+  function pixelToVH(value) {
+    return document.querySelector("#pixelToVH").innerHTML = `Result = ${(100 * value) / window.innerHeight}vh`;
+  }
+  function pixelToWH(value) {
+    return document.querySelector("#pixelToWH").innerHTML = `Result = ${(100 * value) / window.innerWidth}wh`;
+  }
+  function vhToPixel(value) {
+    return document.querySelector("#vhToPixel").innerHTML = `Result = ${(window.innerHeight * value) / 100}px`;
+  }
+  function whToPixel(value) {
+    return document.querySelector("#whToPixel").innerHTML = `Result = ${((window.innerWidth * value) / 100)}px`;
+  }
+</script>
