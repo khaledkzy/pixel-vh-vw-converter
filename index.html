@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-  <title>Pixel PX to VH | WH Viewport conversion</title>
+  <title>Pixel PX to VH | VW Viewport conversion</title>
 </head>
 
 <body>
   <header>
     <nav>
       <h1>
-        <a href="/">Pixel PX to VH  WH Viewport conversion</a>
+        <a href="/">Pixel PX to VH VW Viewport conversion</a>
       </h1>
     </nav>
   </header>
@@ -28,11 +28,11 @@
     </div>
     <!-- 2 -->
     <div>
-      <span class="text">Convert From px to wh</span>
+      <span class="text">Convert From px to VW</span>
       <br>
-      <input class="pixelToWH" type="number" onkeyup="pixelToWH(this.value);">
+      <input class="pixelToVW" type="number" onkeyup="pixelToVW(this.value);">
       <br>
-      <span class="result" id="pixelToWH">Result</span>
+      <span class="result" id="pixelToVW">Result</span>
     </div>
     <!-- 3 -->
     <div>
@@ -44,11 +44,11 @@
     </div>
     <!-- 4 -->
     <div>
-      <span class="text">Convert From wh to wh</span>
+      <span class="text">Convert From VW to px</span>
       <br>
-      <input class="whToPixel" type="number" onkeyup="whToPixel(this.value);">
+      <input class="vwToPixel" type="number" onkeyup="vwToPixel(this.value);">
       <br>
-      <span class="result" id="whToPixel">Result</span>
+      <span class="result" id="vwToPixel">Result</span>
     </div>
 
   </main>
@@ -56,10 +56,10 @@
 
   <footer id="footer">
     Copyright (c) 2018
-    <a href="https://khaledkzy.github.io/pixel-vh-wh-converter/">
+    <a href="https://khaledkzy.github.io/pixel-vh-vw-converter/">
       <strong>Pixel PX to VH VW Viewport conversion</strong>
     </a> / To view the
-    <a href="https://github.com/khaledkzy/pixel-vh-wh-converter">
+    <a href="https://github.com/khaledkzy/pixel-vh-VW-converter">
       <strong>Source Code</strong>
     </a>
   </footer>
@@ -69,15 +69,27 @@
   function pixelToVH(value) {
     return document.querySelector("#pixelToVH").innerHTML = `Result = ${(100 * value) / window.innerHeight}vh`;
   }
-  function pixelToWH(value) {
-    return document.querySelector("#pixelToWH").innerHTML = `Result = ${(100 * value) / window.innerWidth}wh`;
+  function pixelToVW(value) {
+    return document.querySelector("#pixelToVW").innerHTML = `Result = ${(100 * value) / window.innerWidth}vw`;
   }
   function vhToPixel(value) {
     return document.querySelector("#vhToPixel").innerHTML = `Result = ${(window.innerHeight * value) / 100}px`;
   }
-  function whToPixel(value) {
-    return document.querySelector("#whToPixel").innerHTML = `Result = ${((window.innerWidth * value) / 100)}px`;
+  function vwToPixel(value) {
+    return document.querySelector("#vwToPixel").innerHTML = `Result = ${((window.innerWidth * value) / 100)}px`;
   }
+
+window.addEventListener('resize', function () {
+	let pixelToVHValue = window.innerHeight
+	let pixelTovwValue = window.innerWidth
+	let vhToPixelValue = window.innerHeight
+	let vwToPixelValue = window.innerWidth
+    pixelToVH(pixelToVHValue)
+    pixelToVW(pixelTovwValue)
+    vhToPixel(vhToPixelValue)
+    vwToPixel(vwToPixelValue)
+})
+
 </script>
 
 </html>
