@@ -15,7 +15,8 @@ body {
 
 nav h1 {
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 14px;
+    font-size: 3vw;
 }
 
 #footer {
