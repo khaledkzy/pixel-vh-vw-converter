@@ -79,16 +79,17 @@
     return document.querySelector("#vwToPixel").innerHTML = `Result = ${((window.innerWidth * value) / 100)}px`;
   }
 
-window.addEventListener('resize', function () {
-	let pixelToVHValue = window.innerHeight
-	let pixelTovwValue = window.innerWidth
-	let vhToPixelValue = window.innerHeight
-	let vwToPixelValue = window.innerWidth
+  window.addEventListener('resize', updateMeasurements)
+  function updateMeasurements() {
+    const pixelToVHValue = document.querySelector('.pixelToVH').value
+    const pixelToVWValue = document.querySelector('.pixelToVW').value
+    const vhToPixelValue = document.querySelector('.vhToPixel').value
+    const vwToPixelValue = document.querySelector('.vwToPixel').value
     pixelToVH(pixelToVHValue)
-    pixelToVW(pixelTovwValue)
+    pixelToVW(pixelToVWValue)
     vhToPixel(vhToPixelValue)
     vwToPixel(vwToPixelValue)
-})
+  }
 
 </script>
 
