@@ -16,8 +16,10 @@ body {
 nav h1 {
     margin: 0 auto;
     padding-top: 14px;
-    font-size: 3vw;
+    font-size: 1.3rem;
+    transition: 1s;
 }
+
 
 #footer {
     background-color: #444;
@@ -97,3 +99,10 @@ button:focus {
     font-size: 15px;
     font-weight: 900;
 }
+
+
+@media screen and (min-width: 500px) {
+    nav h1 {
+      font-size: 1.5rem;
+    }
+  }
