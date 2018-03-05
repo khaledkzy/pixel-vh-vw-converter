@@ -1,10 +1,12 @@
 # What makes this tool a bit different?
 
-> What makes this tool a bit different is that you don't need to go and find your window viewport size cause it uses javascript to get it for you.
+> What makes this tool a bit different is that you don't need to go and find your window viewport size everytime you want to convert an element cause javascript does that for you.
 
 ### How to use the tool ?? 
 
 > Let's say you want to make your element responsive. One of the things you would do is to changes the pixels to a vw or vh units. Assuming the element is 150px. Then you would open the tool and resize the window accordingly and then type the pixels ratio.
+
+> The element that I want to make responsive is the two selection box. u
 
 > The element that I want to convert has 150px
 
