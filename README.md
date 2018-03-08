@@ -1,4 +1,4 @@
-# Pixel to VH/VQ Converter
+# Pixel to VH/VW Converter
 This tool will allow you to easily convert values from Pixel units to VH/VW units and viceversa.
 
 
