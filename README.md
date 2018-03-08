@@ -28,7 +28,7 @@ This tool will allow you to easily convert values from Pixel units to VH/VW unit
 
 ![](https://github.com/khaledkzy/pixel-vh-vw-converter/blob/master/img/4.PNG)
 
-> Also this tool is dynamic. Which means thatyou could resize it without the need to refresh your browser.
+> Also this tool is dynamic. Which means that you could resize it without the need to refresh your browser.
 
 ![](https://github.com/khaledkzy/pixel-vh-vw-converter/blob/master/img/dynamic.gif)
 
